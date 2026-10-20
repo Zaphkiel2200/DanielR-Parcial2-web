@@ -1,3 +1,5 @@
+Daniel Felipe Rivas Ulchur
+
 # Resultados del parcial práctico 2
 
 Registrar resultados reales después de implementar y probar los endpoints. Sustituir los IDs de ejemplo por los utilizados.
