@@ -5,6 +5,9 @@ import { ReservationEntity } from './entities/reservation.entity';
 export class ReservationRulesService {
   ensureCanCancel(reservation: ReservationEntity): void {
     // TODO 2: Implement the cancellation rule. Do not modify or save the reservation here.
-    throw new NotImplementedException('TODO 2: implement the cancellation rule');
+    if(reservation.status !== 'active'){
+      throw new ConflictException('cannot double cancel')
+    }
+    // throw new NotImplementedException('TODO 2: implement the cancellation rule');
   }
 }
